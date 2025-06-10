@@ -38,7 +38,7 @@ baza()
 screen = pygame.display.set_mode((800, 800))
 pygame.display.set_caption("Flappy Bird")
 clock = pygame.time.Clock()
-background = pygame.image.load("haker/chmury.jpg").convert()
+background = pygame.image.load("/chmury.jpg").convert()
 background = pygame.transform.scale(background, (800, 800))
 background_x = 0
 
@@ -54,14 +54,14 @@ font = pygame.font.SysFont('Arial', 30)
 
 player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
 
-bird = pygame.image.load("haker/bird.png").convert_alpha()
+bird = pygame.image.load("/bird.png").convert_alpha()
 
 rury = []
 
 najlepszy_wynik = najlepszy()
 
 def okno():
-    background2 = pygame.image.load("haker/menu.png").convert()
+    background2 = pygame.image.load("/menu.png").convert()
     background2 = pygame.transform.scale(background2, (800, 800))
     screen.blit(background2, (0, 0))
     global najlepszy_wynik, player_pos
